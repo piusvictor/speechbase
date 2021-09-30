@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <!-- Compiled and minified css -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/custom.css"> -->
+    <title>Practicing materialize css framework</title>
+    <style>
+        .mt-1 {
+            margin-top: 1px;
+        }
+        
+        .mt-2 {
+            margin-top: 2px;
+        }
+        
+        .mt-3 {
+            margin-top: 3px;
+        }
+        
+        .mt-4 {
+            margin-top: 4px;
+        }
+        
+        .mt-5 {
+            margin-top: 5px;
+        }
+        
+        .tabs {
+            background-color: orange;
+            margin: 0px;
+        }
+        
+        .tabs .indicator {
+            background-color: white;
+        }
+        
+        .tabs .tab a:hover,
+        .tabs .tab a.active {
+            color: white;
+        }
+        
+        .tabs .tab a {
+            color: rgb(228, 220, 220);
+        }
+        
+        .col.outer {
+            padding: 0px;
+        }
+        
+        .tab-header {
+            min-height: 90px;
+            margin: 0;
+            background-color: orange;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        body {
+            background-color: rgba(240, 159, 9, 0.116);
+            overflow-y: hidden;
+        }
+        
+        .tab-content-wrapper {
+            margin: 20px auto;
+            /* background-color: rgba(240, 159, 9, 0.116);*/
+            width: 80%;
+            display: flex;
+            gap: 15px;
+            background-color: #eee;
+            border-radius: 5px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        
+        @media (max-width:578px) {
+            .tab-content-wrapper {
+                margin: 10px auto;
+                /* background-color: rgba(240, 159, 9, 0.116);*/
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        
+        .carousel {
+            /*background-color: rgba(240, 159, 9, 0.116);*/
+            min-height: 100vh !important;
+        }
+        
+        .carousel.carousel-slider .carousel-item {
+            overflow-y: auto !important;
+        }
+        
+        .tab-content1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .tab-content-spacer {
+            min-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <!-- <div style="height:65px;background-color:grey">
+
+ </div>      -->
+
+        <div class="tab-header">
+            <div style="cursor: pointer;">
+                <i onclick="window.history.back()" class="fa fa-long-arrow-left" style="font-size: 24px;"></i>
+            </div>
+            <div>
+
+                <p style="font-weight: 500;font-size: 1.3rem;">CareGiver category</p>
+
+                <h6 style="margin-top: -1rem;">Augmented and Alternative Communication</h6>
+                <p>
+                    Doctors / Nurses
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col outer s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a class="active" href="#web">Web</a></li>
+                    <li class="tab col s3"><a href="#video">Video</a></li>
+                    <li class="tab col s3 "><a href="#pdf">PDF</a></li>
+                    <li class="tab col s3"><a href="#ppt">PPT</a></li>
+                </ul>
+            </div>
+            <div id="web" class="col s9" style="margin-right: 40px;">
+                <!--webcontents-->
+                <div class="tab-content-wrapper">
+                    <img src="/images/sb_logo.png" alt="sb_logo" width="200px" style="object-fit: cover;">
+
+                    <div>
+                        <h6 style="font-weight: 500;">Hatua za kuchukua kuepukana na hatari za ukiziwi</h6>
+                        <p onclick="navigator.share({url:'https://developer.mozilla.org',title:'MDN',text:'Testing'})" style="word-wrap: break-word;cursor:pointer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                            <br>
+                            <i class="material-icons orange-text">visibility</i>
+                            <i class="material-icons orange-text">share</i>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/pic4.PNG" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+
+
+                    </p>
+                    <!-- <p><i class="material-icons">share</i></p> -->
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/sb_logo.png" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+                    </p>
+                </div>
+
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/pic4.PNG" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+                    </p>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/sb_logo.png" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+                    </p>
+                </div>
+
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/pic4.PNG" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+                    </p>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/sb_logo.png" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+                    </p>
+                </div>
+
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/pic4.PNG" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+                    </p>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/sb_logo.png" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+                    </p>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/pic4.PNG" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+                    </p>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <img src="./images/sb_logo.png" alt="sb_logo" width="200px">
+                    <p style="width: 50ch;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque incidunt voluptatibus culpa dicta laboriosam! Nemo voluptate, error dicta iste architecto dolor dolores exercitationem culpa, modi explicabo deleniti hic a. Soluta.
+                        <br>
+                        <i class="material-icons orange-text">visibility</i>
+                        <i class="material-icons orange-text">share</i>
+                    </p>
+                </div>
+
+
+                <!--tab content-spacer-->
+                <div class="tab-content-spacer">
+
+                </div>
+                <!--/tab content-spacer-->
+
+
+
+                <!--/webcontents-->
+            </div>
+            <div id="video">
+                <!-- <iframe width="100%" height="310px" src="https://www.youtube.com/embed/wBORIHZgrl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+                <div style="display: flex;justify-content: space-around;padding-left: 3rem;padding-right: 3rem;gap:10px">
+                    <div style="flex:2">
+
+                        <div class="video">
+                            <div class="row">
+                                <div class="col s12 m12">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <!-- <img src="images/sample-1.jpg"> -->
+                                            <video src="./videos/typescript.mp4" style="width: 100%;height:310px" controls>
+
+                                            </video>
+                                            <!-- <span class="card-title">Card Title</span> -->
+                                            <a class="btn-floating halfway-fab waves-effect waves-light orange "><i class="material-icons">play_arrow</i></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="" style="flex:1">
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle orange" style="cursor: pointer;">play_arrow</i>
+                                <span class="title">Title</span>
+                                <p>First Line <br> Second Line
+                                </p>
+                                <a href="#!" class="secondary-content">6:45</a>
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle orange">play_arrow</i>
+                                <span class="title">Title</span>
+                                <p>First Line <br> Second Line
+                                </p>
+                                <a href="#!" class="secondary-content">7:45</a>
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle orange">play_arrow</i>
+                                <span class="title">Title</span>
+                                <p>First Line <br> Second Line
+                                </p>
+                                <a href="#!" class="secondary-content">5:50</a>
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle orange">play_arrow</i>
+                                <span class="title">Title</span>
+                                <p>First Line <br> Second Line
+                                </p>
+                                <a href="#!" class="secondary-content">10:28</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div id="pdf" class="col s9">
+            PPT contents <br>
+            <ul>
+                <li><a href="./pdf/neural.pdf" download="./pdf/neural.pdf">1. Click to download, Neurological information PDF document  </a></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <ul class="collection">
+
+                <li class="collection-item avatar">
+                    <i class="material-icons circle orange">picture_as_pdf</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br> Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">visibility</i><i class="material-icons">download</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle orange">picture_as_pdf</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br> Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">visibility</i><i class="material-icons">download</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle orange">picture_as_pdf</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br> Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">visibility</i><i class="material-icons">download</i></a>
+                </li>
+            </ul>
+
+
+        </div>
+        <div id="ppt" class="col s12 ">PPT contents
+            <br> 1.
+            <a href="./ppt/neural.pptx" download="./ppt/neural.pptx">Click to download, Neurological information PPT document  </a>
+
+
+            <ul class="collection">
+
+                <li class="collection-item avatar">
+                    <i class="material-icons circle orange">picture_as_pdf</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br> Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">visibility</i><i class="material-icons">download</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle orange">picture_as_pdf</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br> Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">visibility</i><i class="material-icons">download</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle orange">picture_as_pdf</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br> Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">visibility</i><i class="material-icons">download</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="./js/custom.js"></script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            //  var el = document.querySelectorAll('.tabs');
+
+            //  var instance = M.Tabs.init(el,{swipeable:true});
+            //var instance = M.Tabs.getInstance(el);
+
+            // console.log(instance); 
+            //  var instances = M.Modal.init(elems,{});
+        });
+
+
+        $(document).ready(function() {
+            // initialize tab
+            $('.tabs').tabs({
+                swipeable: true
+            });
+
+            // select tab 2 on document load
+            $('.tabs').tabs('select', 'video');
+        });
+    </script>
+</body>
+
+</html>

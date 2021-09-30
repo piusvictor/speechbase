@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <link rel="stylesheet" href="../assets/css/swiper-css/swiper.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "abe119ee-ff10-4a98-8b2e-417750867929";
+        (function() {
+            d = document;
+            s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Speechbase Website Neurological | Hearing | DLD and AAC</title>
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: 550px;
+        }
+        
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+        
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .search-categories::-webkit-scrollbar {
+            width: 0;
+            /* Remove scrollbar space */
+            background: transparent;
+            /* Optional: just make scrollbar invisible */
+        }
+        /* Optional: show position indicator in red */
+        
+        .search-categories::-webkit-scrollbar-thumb {
+            background: transparent;
+            /* Optional: just make scrollbar invisible */
+        }
+        /* body {
+            top: 0px !important;
+            scroll-behavior: smooth;
+        } */
+        
+        .goog-logo-link {
+            display: none !important;
+        }
+        
+        .goog-te-gadget {
+            color: transparent !important;
+        }
+        
+        #google_translate_element {
+            position: fixed;
+            top: 9.5%;
+            right: 1%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        #google_translate_element::before {
+            content: "";
+            position: absolute;
+            top: -17.4%;
+            right: 25%;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 20px;
+            height: 20px;
+            z-index: -1;
+            clip-path: polygon(49% 36%, 0% 100%, 100% 100%);
+            transition: all .5s;
+        }
+        
+        #google_translate_element.scrolled::before {
+            content: "";
+            position: absolute;
+            top: -17.4%;
+            right: 25%;
+            background-color: rgba(0, 0, 0, 0);
+            width: 20px;
+            height: 20px;
+            z-index: -1;
+            clip-path: polygon(49% 36%, 0% 100%, 100% 100%);
+            transition: all .5s;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--Google Translator section-->
+
+    <div style="position: absolute;top: 0px;left: 5px;z-index:2" id="translator-container">
+
+        <div style="position:relative">
+
+            <div id="google_translate_element">
+                <h5 style="color:white">Change Language:</h5>
+                <div style="position: absolute;color:white;top:2px;right:10px;cursor:pointer" id="close-btn">
+                    Close <i class="fa fa-times-circle-o notranslate" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/Google Translator section-->
+
+
+    <!--Top Searchbar-->
+    <div class="top-search-bar">
+
+        <div class="search-text-container">
+            <div class="search-back-arrow">
+                <span class="material-icons" style="color:#E99119;cursor:pointer">keyboard_backspace</span>
+            </div>
+            <div class="search-text">
+                <input type="text" placeholder="Search speechbase" id="search-text" class="">
+            </div>
+        </div>
+
+        <div class="search-categories">
+            <div class="category-chip active">Neurological</div>
+            <div class="category-chip">Hearing Impairement</div>
+            <div class="category-chip">Developmental Language Disorder</div>
+            <div class="category-chip">Augmented and Alternative Communication</div>
+        </div>
+
+    </div>
+    <!--/Top Searchbar-->
+
+
+
+
+    <!--sidebar menu-->
+
+    <div class="fab-btn shadow">
+        <!--<h1><b> +</b></h1>-->
+        <span class="material-icons text-light mx-3 my-3 notranslate" style="cursor: pointer;">keyboard_arrow_up</span>
+    </div>
+
+    <div class="nav-overlay">
+    </div>
+
+
+
+    <div class="side-nav" id="side-nav">
+        <div class="side-nav-top pl-5 mb-5 pt-4">
+            <img src="../assets/images/specialization/welcome.svg" alt="" width="150" height="150">
+        </div>
+        <div style="text-align: center;margin-top: -2rem;margin-bottom: 0.5rem;">
+            <span style="font-size: 20px;color:#E99119">Menu</span>
+        </div>
+        <a href="#"><span class="material-icons text-secondary mx-3 my-3 notranslate" >home</span> <span>SLT Practice Management for clinics and Schools</span> </a>
+        <a href="#" data-dropdown="dropdown1"><span class="material-icons text-secondary mx-3 my-3 notranslate" >book</span> <span style="display: inline-block;width:200px">Education and Certification</span> <span class="material-icons text-secondary mx-3 my-3 notranslate" >keyboard_arrow_down</span></a>
+
+        <ul class="dropdown-sidemenu" id="dropdown1">
+            <li onclick="window.location.assign('explore.html')" class="dropdown-sidemenu-item">Neurological</li>
+            <li class="dropdown-sidemenu-item">Hearing Impairement</li>
+            <li class="dropdown-sidemenu-item">AAC</li>
+            <li class="dropdown-sidemenu-item">DLD</li>
+        </ul>
+
+
+        <a href="#"><span class="material-icons text-secondary mx-3 my-3 notranslate" >new_label</span> <span>SLT Science</span></a>
+        <a href="#" data-dropdown="dropdown2"><span class="material-icons text-secondary mx-3 my-3 notranslate" >manage_accounts</span> <span style="display: inline-block;width:200px">Affected people and Relatives</span><span class="material-icons text-secondary mx-3 my-3 notranslate" >keyboard_arrow_down</span></a>
+
+        <ul class="dropdown-sidemenu" id="dropdown2">
+            <li onclick="window.location.assign('explore.html')" class="dropdown-sidemenu-item">Neurological</li>
+            <li class="dropdown-sidemenu-item">Hearing Impairement</li>
+            <li class="dropdown-sidemenu-item">AAC</li>
+            <li class="dropdown-sidemenu-item">DLD</li>
+        </ul>
+        <a href="#"><span class="material-icons text-secondary mx-3 my-3 notranslate" >manage_accounts</span> <span>Advocacy, Community and Network</span></a>
+        <a href="#"><span class="material-icons text-secondary mx-3 my-3 notranslate" >manage_accounts</span> <span>Policy and Decision makers</span></a>
+
+        <div style="min-height: 1px;width:100%;background-color:#ddd" style="margin-bottom: 3rem;">
+
+        </div>
+
+
+        <div style="text-align: center;;margin-top: 1rem">
+            <span style="font-size: 20px;color:#E99119">Who we are</span>
+        </div>
+        <a href="#"><span class="material-icons text-secondary mx-3 my-3 notranslate" >home</span> <span>About us</span> </a>
+        <a href="#"><span class="material-icons text-secondary mx-3 my-3 notranslate" >visibility</span> <span>Mission & Vision</span></a>
+        <a href="#"><span class="material-icons text-secondary mx-3 my-3 notranslate" >new_label</span> <span>Contact Us</span></a>
+
+
+        <div style="min-height: 1px;width:100%;background-color:#ddd" style="margin-bottom: 3rem;">
+
+        </div>
+
+
+
+        <div style="text-align: center;margin-top: 1rem;">
+            <span style="font-size: 20px;color:#E99119">Others</span>
+        </div>
+        <a href="#"><span class="material-icons text-secondary mx-3 my-3 notranslate" >home</span> <span>Settings</span> </a>
+        <a href="#"><span class="material-icons text-secondary mx-3 my-3 notranslate" >visibility</span> <span>Privacy & Policy</span></a>
+
+
+    </div>
+
+
+
+    <!--/sidebar menu-->
+
+
+    <div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <header>
+        <nav>
+            <div class="left-nav">
+                <div class="mr-4 top-bar-menu" style="cursor: pointer;"> <img src="/assets/images/top-menu/menu_4.png" class="side-menu-icon" alt="menu" style="width:45px"></div>
+                <div style="position:absolute;top:0.25rem;left:87px"> <img src="/assets/images/top-menu/sb_logo.png" alt="menu" class="" style="width:95px"></div>
+            </div>
+
+
+            <div class="middle-nav">
+                <span style="color:#E9911A;cursor:pointer;font-size: 1.1rem;font-weight: 500;">HOME</span> &nbsp;&nbsp; <span onclick="window.location.assign('/mobile/pages/aboutus.html')" style="color:#6C757D;cursor: pointer;font-size: 1.1rem;font-weight: 500;">ABOUT US</span>                &nbsp; &nbsp;
+                <span onclick="window.location.assign('/mobile/home.html#specialization')" style="color:#6C757D;cursor: pointer;font-size: 1.1rem;font-weight: 500;">SPECIALIZATION</span> &nbsp; &nbsp; <span style="color:#6C757D;cursor: pointer;font-size: 1.1rem;font-weight: 500;">CONTACT US</span>
+            </div>
+
+            <div class="right-nav">
+                <div class="col-top-menu">
+
+                </div>
+
+                <div class="col-ending">
+                    <span class="material-icons notranslate" style="font-size: 2.5em;color:#000051;cursor:pointer" id="accessibilityWidget" tabindex="0">accessible</span>
+                    <span class="material-icons notranslate" id="translate" style="font-size: 2.5em;color:#000051;cursor:pointer">translate</span>
+                    <span class="material-icons search-button notranslate" style="font-size: 2.5em;color:#E9911A;cursor:pointer">search</span>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section" style="display: flex;align-items: flex-end;justify-content: center;line-height: 3rem;padding-bottom: 2rem;">
+        <div></div>
+        <div class="hero-section-contents">
+
+            <div class="hero-section-content1" style="margin-bottom: 2rem !important;">
+                <h3 style="text-align: center;color:#f6f3f3;font-size:2.5em;font-weight:500">Learn and help Others</h3>
+                <p style="text-align: center;color:rgb(240, 239, 239);font-size:1.2rem;font-weight:300;letter-spacing: .02rem;">
+                    We educate you on how to deal with different impairments and disorders on <em>Neurological,
+Hearing, Language Developmental and 
+Augmented Communication</em>
+                </p>
+                <p style="text-align: center;color:#E9911A;margin-top: -1rem;font-size: 1.2rem;">Choose category below to get information</p>
+                <p style="display: flex;justify-content:center;gap:2em;margin-bottom:30px">
+                    <button class="caregive-button" onclick="window.location.assign('http://127.0.0.1:5501/mobile/pages/caregiverintro.html')">Affected Person</button>
+                    <button class="slt-button" onclick="window.location.assign('http://127.0.0.1:5501/mobile/explore.html')">SLT Professional</button>
+                </p>
+                <p style="text-align: center;font-weight:400;color:#F5E9DE;font-size:1.1rem;cursor:pointer;margin-top: -0.7rem;" onclick="window.location.assign('/mobile/pages/aboutus.html')">
+                    About Us <i class="fa fa-long-arrow-right"></i>
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="hero-shape-divider">
+        <?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" height="256px" width="100%" preserveAspectRatio="none"><path fill="#E9911A" fill-opacity="1" d="M0,0L60,5.3C120,11,240,21,360,26.7C480,32,600,32,720,42.7C840,53,960,75,1080,74.7C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+    </section>
+
+
+    <!--Article news Desktop Version-->
+    <section class="articles-news-section">
+        <div class="articles-news-section-articles">
+            <div class="articles-news-section-section-title">Articles and News</div>
+
+
+            <!--Swiper slider-->
+            <div class="swiper s1" style="border-radius: 0px 0px 15px 15px;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <div style="width: 100%;position: relative;" class="swiper">
+                            <img src="../assets/images/backgrounds/P-70.jpg" alt="" width="100%" height="550px" style="object-fit:cover;object-position: center;border-radius: 10px;">
+                            <div style="position: absolute;bottom: 0px;min-height:95px;width: 100%;background-color:#11100f77 ;border-radius: 0px 0px 13px 13px;display:flex;flex-direction: column;justify-content: space-between;">
+                                <p style="font-size: 1.2rem;padding: 10px 20px;color: rgba(255, 255, 255, 0.835);font-weight: 200;letter-spacing: .02rem;">
+                                    The following is the Upcoming Training is on the side of let more people to understand...
+                                </p>
+                                <p style="background-color: #E9911A;display: grid;place-items: center;height: 50px;border-radius: 0px 0px 13px 13px;">
+                                    <button style="outline: none;border:2px white solid;border-radius: 20px;background-color: transparent;color:white;padding: 5px 10px;font-size: 1rem;">Read More</button>
+                                </p>
+                            </div>
+                            <!-- <p></p> -->
+                        </div>
+
+                    </div>
+                    <!--/Swiper-slider-->
+
+                    <div class="swiper-slide">
+
+                        <div style="width: 100%;position: relative;" class="swiper">
+                            <img src="../assets/images/backgrounds/P-103.jpg" alt="" width="100%" height="550px" style="object-fit:cover;object-position: center;border-radius: 10px;">
+                            <div style="position: absolute;bottom: 0px;min-height:95px;width: 100%;background-color:#11100f77 ;border-radius: 0px 0px 13px 13px;display:flex;flex-direction: column;justify-content: space-between;">
+                                <p style="font-size: 1.2rem;padding: 10px 20px;color: rgba(255, 255, 255, 0.835);font-weight: 200;letter-spacing: .02rem;">
+                                    The following is the Upcoming Training is on the side of let more people to understand...
+                                </p>
+                                <p style="background-color: #E9911A;display: grid;place-items: center;height: 50px;border-radius: 0px 0px 13px 13px;">
+                                    <button style="outline: none;border:2px white solid;border-radius: 20px;background-color: transparent;color:white;padding: 5px 10px;font-size: 1rem;">Read More</button>
+                                </p>
+                            </div>
+                            <!-- <p></p> -->
+                        </div>
+
+                    </div>
+                    <!--/Swiper-slider-->
+
+                    <div class="swiper-slide">
+
+                        <div style="width: 100%;position: relative;" class="swiper">
+                            <img src="../assets/images/backgrounds/P-221.jpg" alt="" width="100%" height="550px" style="object-fit:cover;object-position: center;border-radius:13px 13px;">
+                            <div style="position: absolute;bottom: 0px;min-height:95px;width: 100%;background-color:#11100f77 ;border-radius: 0px 0px 13px 13px;display:flex;flex-direction: column;justify-content: space-between;">
+                                <p style="font-size: 1.2rem;padding: 10px 20px;color: rgba(255, 255, 255, 0.835);font-weight: 200;letter-spacing: .02rem;">
+                                    The following is the Upcoming Training is on the side of let more people to understand...
+                                </p>
+                                <p style="background-color: #E9911A;display: grid;place-items: center;height: 50px;border-radius: 0px 0px 13px 13px;">
+                                    <button style="outline: none;border:2px white solid;border-radius: 20px;background-color: transparent;color:white;padding: 5px 10px;font-size: 1rem;">Read More</button>
+                                </p>
+                            </div>
+                            <!-- <p></p> -->
+                        </div>
+
+                    </div>
+                    <!--/Swiper-slider-->
+
+
+
+
+
+                </div>
+                <!--/Swiper-wrapper-->
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <!--/swiper-->
+
+            <!--/Swiper slider-->
+
+
+        </div>
+        <div class="articles-news-section-news">
+            <div class="articles-news-section-news-title">
+                News
+                <hr>
+            </div>
+            <div class="articles-news-section-news-contents">
+                <div class="news-container">
+                    <marquee behavior="" direction="up" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">
+                        <div class="news-content">
+                            <h3 style="color:#e98e0f;">Upatikanaji wa suluhu ya ukiziwi</h3>
+                            <p style="font-size: 1.1em;margin-top:3px;color:#494f54">Watu wamejipanga vizuri kupambana na hali ya kutoskia...
+                                <p style="margin-top: 1.2rem;"> <span style="color:#e98e0f ; border:1px solid #e98e0f;border-radius:15px;padding:3px 6px;font-size:0.9em;cursor:pointer" onclick="window.location.assign('/mobile/pages/news.html')">Readmore</span></p>
+                            </p>
+                            <!-- <hr> -->
+                        </div>
+
+                        <div class="news-content">
+                            <h3 style="color:#e98e0f;">Upatikanaji wa suluhu ya ukiziwi</h3>
+                            <p style="font-size: 1.1em;margin-top:3px;color:#494f54">Watu wamejipanga vizuri kupambana na hali ya kutoskia...
+                                <p style="margin-top: 1.2rem;"> <span style="color:#e98e0f ; border:1px solid #e98e0f;border-radius:15px;padding:3px 6px;font-size:0.9em;cursor:pointer" onclick="window.location.assign('/mobile/pages/news.html')">Readmore</span></p>
+                            </p>
+
+                        </div>
+
+                        <div class="news-content">
+                            <h3 style="color:#e98e0f;">Upatikanaji wa suluhu ya ukiziwi</h3>
+                            <p style="font-size: 1.1em;margin-top:3px;color:#494f54">Watu wamejipanga vizuri kupambana na hali ya kutoskia...
+                                <p style="margin-top: 1.2rem;"> <span style="color:#e98e0f ; border:1px solid #e98e0f;border-radius:15px;padding:3px 6px;font-size:0.9em;cursor:pointer" onclick="window.location.assign('/mobile/pages/news.html')">Readmore</span></p>
+                            </p>
+
+                        </div>
+
+                        <div class="news-content">
+                            <h3 style="color:#e98e0f;">Upatikanaji wa suluhu ya ukiziwi</h3>
+                            <p style="font-size: 1.1em;margin-top:3px;color:#494f54">Watu wamejipanga vizuri kupambana na hali ya kutoskia...
+                                <p style="margin-top: 1.2rem;"> <span style="color:#e98e0f ; border:1px solid #e98e0f;border-radius:15px;padding:3px 6px;font-size:0.9em;cursor:pointer" onclick="window.location.assign('/mobile/pages/news.html')">Readmore</span></p>
+                            </p>
+
+                        </div>
+
+
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Article news Desktop Version-->
+
+    <!--Article news Mobile Version-->
+    <!-- <section class="articles-news-section-mobile">
+        <div class="articles"></div>
+        <div class="news"></div>
+    </section> -->
+    <!--/Article news Mobile Version-->
+
+
+    <section class="our-specialization">
+
+        <div class="specialization-heading">
+            <span style="color: #6c757d;">Our </span>Specialization
+        </div>
+        <!--specialization-container-->
+        <div class="specialization-flex-container" style="display: flex;flex-wrap:wrap;justify-content:center;gap:40px">
+            <div class="specialization-container ">
+                <div class="specialization-image">
+                    <img src="../assets/images/specialization/brain1.svg" alt="" width="150">
+                </div>
+                <div class="specialization-details">
+                    <h4 style="color: rgb(14, 13, 13);text-align:center">Neurological Impairement</h4>
+                    <p style="text-align: center;color:rgb(100, 100, 100);line-height:1.4em;font-size:0.8em">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum a cupiditate tempore libero itaque minima, exercitationem distinctio!
+                    </p>
+                </div>
+                <div class="specialization-button">
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="specialization-container ">
+                <div class="specialization-image">
+                    <img src="../assets/images/specialization/hearing.svg" alt="" width="150">
+                </div>
+                <div class="specialization-details">
+                    <h4 style="color: rgb(14, 13, 13);text-align:center">Hearing Impairement</h4>
+                    <p style="text-align: center;color:rgb(100, 100, 100);line-height:1.4em;font-size:0.8em">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum a cupiditate tempore libero itaque minima, exercitationem distinctio!
+                    </p>
+                </div>
+                <div class="specialization-button">
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="specialization-container ">
+                <div class="specialization-image">
+                    <img src="../assets/images/specialization/customer-service.svg" alt="" width="150">
+                </div>
+                <div class="specialization-details">
+                    <h4 style="color: rgb(14, 13, 13);text-align:center">Developmental Language Disorder</h4>
+                    <p style="text-align: center;color:rgb(100, 100, 100);line-height:1.4em;font-size:0.8em">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum a cupiditate tempore libero itaque minima, exercitationem distinctio!
+                    </p>
+                </div>
+                <div class="specialization-button">
+                    <button>Read More</button>
+                </div>
+            </div>
+
+
+            <div class="specialization-container ">
+                <div class="specialization-image">
+                    <img src="../assets/images/specialization/information.svg" alt="" width="150">
+                </div>
+                <div class="specialization-details">
+                    <h4 style="color: rgb(14, 13, 13);text-align:center">Augmented and Alternative Communication</h4>
+                    <p style="text-align: center;color:rgb(100, 100, 100);line-height:1.4em;font-size:0.8em">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum a cupiditate tempore libero itaque minima, exercitationem distinctio!
+                    </p>
+                </div>
+                <div class="specialization-button">
+                    <button>Read More</button>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        <!--/specialization-container-->
+
+    </section>
+
+
+
+    <section class="event-gallery">
+        <div class="event-gallery-gallery-title">Events Gallery</div>
+        <div class="event-gallery-contents">
+            <div class="event-gallery-gallery-images"><img src="/assets/images/gallery/_NZ66050.jpg" alt=""></div>
+            <div class="event-gallery-gallery-images"><img src="/assets/images/gallery/_NZ66467.jpg" alt=""></div>
+            <div class="event-gallery-gallery-images"><img src="/assets/images/gallery/_NZ66604.jpg" alt=""></div>
+            <div class="event-gallery-gallery-images"><img src="/assets/images/gallery/_NZ66702.jpg" alt=""></div>
+            <div class="event-gallery-gallery-images"><img src="/assets/images/gallery/_NZ66816.jpg" alt=""></div>
+            <div class="event-gallery-gallery-images"><img src="/assets/images/gallery/_NZ67059.jpg" alt=""></div>
+            <div class="event-gallery-gallery-images"><img src="/assets/images/gallery/_NZ66050.jpg" alt=""></div>
+            <div class="event-gallery-gallery-images"><img src="/assets/images/gallery/_NZ66702.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <section class="project-partners">
+        <div class="project-partners-shape-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" height="180px" width="100%" preserveAspectRatio="none" viewBox="0 0 1920 355.813">
+                <g id="Group_5" data-name="Group 5" transform="translate(1920 4135.93) rotate(180)">
+                  <path id="wave_1_" data-name="wave (1)" d="M0,264.508l80-20.051c80-20.051,240-60.152,400-46.743,160,12.908,320,80.579,480,113.538,160,33.46,320,33.46,480-13.284,160-47.245,320-139.98,400-187.224L1920,64V384.813H0Z" transform="translate(0 3716.117)" fill="#6c757d" opacity="0.148"/>
+                  <path id="wave_1_2" data-name="wave (1)" d="M0,252.706l80-18.871c80-18.871,240-56.612,400-43.992C640,201.991,800,265.68,960,296.7c160,31.49,320,31.49,480-12.5,160-44.464,320-131.74,400-176.2L1920,64V365.93H0Z" transform="translate(0 3770)" fill="#e9911a" opacity="0.995"/>
+                </g>
+              </svg>
+
+        </div>
+
+
+        <div class="title">
+            <span>Project</span><span>Partners</span>
+        </div>
+
+        <!-- logo swiper-->
+
+        <!-- Swiper -->
+        <div class="swiper s2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../assets/images/logo/muhas.PNG" alt="muhas"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/kenyata.PNG" alt="kenyata"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/kcmc.PNG" alt="kenyata"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/german.PNG" alt="kenyata"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/daad.PNG" alt="kenyata"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/southafrica.PNG" alt="kenyata"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/speechbase.PNG" alt="kenyata"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/german.PNG" alt="kenyata"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/daad.PNG" alt="kenyata"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/southafrica.PNG" alt="kenyata"></div>
+                <div class="swiper-slide"><img src="../assets/images/logo/speechbase.PNG" alt="kenyata"></div>
+
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div> -->
+        </div>
+
+
+    </section>
+
+
+    <section class="upcoming-events">
+        <div class="col-"></div>
+        <div class="col-"></div>
+        <div class="col-"></div>
+    </section>
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="title">
+                Upcoming Events
+            </div>
+            <div class="events-cards">
+                <div class="event-contents">
+                    <div class="top-section">
+                        <div class="img" style="color:white">
+                            <img src="../assets/images/gallery/_NZ66604.jpg" alt="" width="100%">
+                        </div>
+                        <div class="date-holder">
+                            <div class="date">07</div>
+                            <div class="month">SEPT</div>
+                        </div>
+                    </div>
+                    <div class="bottom-section-2" style="font-size: 1.2rem;">
+                        Speechbase Event to be started on...
+                        <p>
+                            <button class="slt-button">Read more</button>
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="event-contents">
+                    <div class="top-section">
+                        <div class="img" style="color:white">
+                            <img src="../assets/images/gallery/_NZ66702.jpg" alt="" width="100%">
+                        </div>
+                        <div class="date-holder">
+                            <div class="date">08</div>
+                            <div class="month">OCT</div>
+                        </div>
+                    </div>
+                    <div class="bottom-section-2">
+
+                    </div>
+                </div>
+
+
+                <div class="event-contents">
+                    <div class="top-section">
+                        <div class="img" style="color:white">
+                            <img src="../assets/images/gallery/_NZ66467.jpg" alt="" width="100%">
+                        </div>
+                        <div class="date-holder">
+                            <div class="date">09</div>
+                            <div class="month">NOV</div>
+                        </div>
+                    </div>
+                    <div class="bottom-section-2">
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="footer">
+
+            <div class="upper-section">
+                <div class="footer-item" style="position: relative;">
+
+                    <!-- <div style="position: absolute;top:0;right:-257px">
+                        <img src="/images/project-partners.PNG" alt="" width="350px">
+                    </div> -->
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1-B-UKT52b6tiF4sCACcRCg9xvfXTEFqy" width="300" height="200"></iframe>
+                </div>
+                <div class="footer-item">
+                    <h5>MAIN</h5>
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">Vision</a>
+                    <a href="">Mission</a>
+                    <a href="">Contact Us</a>
+                </div>
+                <div class="footer-item">
+                    <h5>RELATED LINKS</h5>
+                    <a href="">Muhas</a>
+                    <a href="">Kenyata</a>
+                    <a href="">Pretoria</a>
+                    <a href="">German</a>
+                </div>
+                <div class="footer-item">
+                    <h5>SOCIAL LINKS</h5>
+                    <div class="social-links">
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-twitter-square"></i>
+                        <i class="fa fa-linkedin-square"></i>
+                    </div>
+                    <div>
+
+                        <p>
+                            <p style="margin-top: 20px;opacity:0.7">Download our App</p>
+                            <img src="../assets/images/logo/get_it.png" alt="get_it" width="128px" style="margin-top: -30px;">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-section-1">
+                All rights reserved SpeechBase&copy2021
+            </div>
+        </div>
+
+
+        </div>
+    </footer>
+
+
+    <script src="../assets/js/swiper-js/swiper.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+
+    <script>
+        const swiper1 = new Swiper('.s1', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+                pauseOnMouseEnter: true
+            },
+
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+
+            // // Navigation arrows
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+        // document.querySelector('.s1').onmouseenter = function() {
+        //     swiper1.stopAutoplay();
+        // }
+
+        // document.querySelector('.s1').onmouseleave = function() {
+        //     swiper1.startAutoplay();
+        // }
+
+
+
+
+
+        //Init logo slider
+
+        //Logo Swiper
+        var swiper2 = new Swiper('.s2', {
+
+            spaceBetween: 30,
+            centeredSlides: false,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     clickable: true,
+            // },
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+            breakpoints: {
+                '@0.00': {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                '@0.75': {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                '@1.00': {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                '@1.50': {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                    pageLanguage: 'en'
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        const google_translate_element = document.querySelector('#google_translate_element');
+        const translate = document.querySelector('#translate');
+        const fab_btn = document.querySelector('.fab-btn');
+
+        var is_translate_visible = true;
+
+
+
+
+        window.onscroll = function() {
+            console.log('window is scrolled', window.scrollY);
+            (window.scrollY > 10) ? (google_translate_element.classList.add('scrolled'), fab_btn.style.opacity = '1', fab_btn.style.visibility = 'visible') : (google_translate_element.classList.remove('scrolled'), fab_btn.style.opacity = '0', fab_btn.style.visibility = 'hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("DOM Loaded", window.screenTop);
+
+            const translatorContainer = document.querySelector("#translator-container");
+            const closeBtn = document.querySelector("#close-btn");
+
+            closeBtn.addEventListener('click', function() {
+                translatorContainer.style.display = "none";
+            })
+
+            translate.onclick = function() {
+                (is_translate_visible) ? (console.log('visible'), is_translate_visible = true, translatorContainer.style.display = "none", is_translate_visible = false) : (console.log('hidden'), is_translate_visible = true, translatorContainer.style.display = "block")
+            }
+
+
+
+            fab_btn.onclick = function() {
+                window.scroll(0, 0);
+                console.log('fab clicked')
+            }
+
+        });
+    </script>
+
+
+
+    <script>
+        (function(d) {
+            var s = d.createElement("script");
+            /* uncomment the following line to override default position*/
+            /* s.setAttribute("data-position", 3);*/
+            /* uncomment the following line to override default size (values: small, large)*/
+            /* s.setAttribute("data-size", "small");*/
+            /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+            /* s.setAttribute("data-language", "language");*/
+            /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+            s.setAttribute("data-color", "#053e67");
+            /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+            /* s.setAttribute("data-type", "1");*/
+            /* s.setAttribute("data-statement_text:", "Our Accessibility Statement");*/
+            /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility")";*/
+            /* uncomment the following line to override support on mobile devices*/
+            /* s.setAttribute("data-mobile", true);*/
+            /* uncomment the following line to set custom trigger action for accessibility menu*/
+            s.setAttribute("data-trigger", "accessibilityWidget")
+            s.setAttribute("data-account", "wvlwpS3Bcx");
+            s.setAttribute("src", "https://cdn.userway.org/widget.js");
+            (d.body || d.head).appendChild(s);
+        })(document)
+    </script>
+    <noscript>
+Please ensure Javascript is enabled for purposes of 
+<a href="https://userway.org">website accessibility</a>
+</noscript>
+</body>
+
+</html>
