@@ -40,7 +40,7 @@ img.logo {
     background-position: top;
     background-image: linear-gradient( rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 70%, // These three 'smooth' out the fade.
     rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0.7) 90%, rgba(0, 0, 0, 0.9) 95%, // Solid to match the background.
-    rgba(0, 0, 0, 1.0) 100%), url('/assets/images/backgrounds/P-87.jpg');
+    rgba(0, 0, 0, 1.0) 100%), url('../images/backgrounds/P-87.jpg');
 }
 
 .articles-news-section {
